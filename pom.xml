@@ -19,8 +19,6 @@
     </licenses>
     <!--properties,变量定义，在dependency引用-->
     <properties>
-        <maven.compiler.source>1.5</maven.compiler.source>
-        <maven.compiler.target>1.5</maven.compiler.target>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -95,6 +93,11 @@
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-streaming-flume_2.11</artifactId>
         <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-graphx_2.11</artifactId>
+        <version>2.3.0</version>
     </dependency>
     <!--hadoop-->
     <dependency>

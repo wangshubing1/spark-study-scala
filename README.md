@@ -1,6 +1,6 @@
 ## Spark 学习练习代码
 ##### 依赖版本：
-* spark2.1.0
+* spark2.3.0
 * scala2.11.12
 
 ###### core ：spark 核心编程

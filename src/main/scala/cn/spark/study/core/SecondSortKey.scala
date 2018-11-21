@@ -1,17 +1,17 @@
 package cn.spark.study.core
 
 /**
- * @author Administrator
- */
-class SecondSortKey(val first: Int, val second: Int) 
-    extends Ordered[SecondSortKey] with Serializable {
-  
+  * @author Administrator
+  */
+class SecondSortKey(val first: Int, val second: Int)
+  extends Ordered[SecondSortKey] with Serializable {
+
   def compare(that: SecondSortKey): Int = {
-    if(this.first - that.first != 0) {
+    if (this.first - that.first != 0) {
       this.first - that.first
     } else {
       this.second - that.second
     }
   }
-  
+
 }

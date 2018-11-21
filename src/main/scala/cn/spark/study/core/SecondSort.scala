@@ -10,21 +10,23 @@ import org.apache.spark.SparkContext
   *
   */
 object SecondSort {
-  
+
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf()
-        .setAppName("SecondSort")  
-        .setMaster("local")  
+      .setAppName("SecondSort")
+      .setMaster("local")
     val sc = new SparkContext(conf)
-  
+
     val lines = sc.textFile("E:\\Git\\spark-study-scala\\file\\data\\wc1", 1)
-    val pairs = lines.map { line => (
+    val pairs = lines.map { line =>
+      (
         new SecondSortKey(line.split(" ")(0).toInt, line.split(" ")(1).toInt),
-        line)}
+        line)
+    }
     val sortedPairs = pairs.sortByKey()
-    val sortedLines = sortedPairs.map(sortedPair => sortedPair._2)  
-    
-    sortedLines.foreach { sortedLine => println(sortedLine) }  
+    val sortedLines = sortedPairs.map(sortedPair => sortedPair._2)
+
+    sortedLines.foreach { sortedLine => println(sortedLine) }
   }
-  
+
 }

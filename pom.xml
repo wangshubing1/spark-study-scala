@@ -23,7 +23,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <scala.version>2.11.12</scala.version>
-        <spark.version>2.1.0</spark.version>
+        <spark.version>2.3.0</spark.version>
         <hadoop.version>2.6.0</hadoop.version>
         <hbase.version>1.2.0</hbase.version>
         <hive.version>1.1.0</hive.version>
@@ -82,7 +82,7 @@
     <dependency>
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-mllib_2.11</artifactId>
-        <version>2.3.0</version>
+        <version>${spark.version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.spark</groupId>
@@ -97,7 +97,7 @@
     <dependency>
         <groupId>org.apache.spark</groupId>
         <artifactId>spark-graphx_2.11</artifactId>
-        <version>2.3.0</version>
+        <version>${spark.version}</version>
     </dependency>
     <!--hadoop-->
     <dependency>

@@ -1,0 +1,32 @@
+{
+  "ResponseStatus": {},
+  "Data": {
+    "TourCopyWriterInfo": {
+      "DefaultCopyWriter": "String",
+      "SearchValue": "String"
+    },
+    "ThemeList": [
+      {
+        "Key": "String",
+        "Value": "String",
+        "PoiId": "String",
+        "IsJump": "False"
+      }
+    ],
+    "DestinationList": [
+      {
+        "DestName": "String",
+        "CategoryId": 0,
+        "SubDestList": [
+          {
+            "Key": "String",
+            "Value": "String",
+            "PoiId": "String",
+            "IsJump": "False"
+          }
+        ]
+      }
+    ],
+    "TourProductList": {}
+  }
+}

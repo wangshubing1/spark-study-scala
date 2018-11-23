@@ -17,7 +17,7 @@ object BroadcastVariable {
       .setMaster("local")
     val sc = new SparkContext(conf)
 
-    val factor = 3;
+    val factor = 3
     val factorBroadcast = sc.broadcast(factor)
 
     val numberArray = Array(1, 2, 3, 4, 5)
